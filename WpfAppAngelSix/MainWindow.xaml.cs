@@ -35,5 +35,10 @@ namespace WpfAppAngelSix
             this.WeldCheckbox.IsChecked = this.ASsemblyCheckbox.IsChecked = this.PlasmaCheckbox.IsChecked = this.LaserCheckbox.IsChecked = this.PurchaseCheckbox.IsChecked
                 = this.LatheCheckbox.IsChecked = this.DrillCheckbox.IsChecked = this.FoldCheckbox.IsChecked = this.RollCheckbox.IsChecked = this.SawCheckbox.IsChecked = false;
         }
+
+        private void Checkbox_Checked(object sender, RoutedEventArgs e)
+        {
+            this.LengthText.Text += (string)((CheckBox)sender).Content;
+        }
     }
 }

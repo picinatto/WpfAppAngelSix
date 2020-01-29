@@ -71,25 +71,25 @@
                 
                 <!-- Column 1 -->
                 <StackPanel Grid.Column="0" Margin="0 0 10 0">
-                    <CheckBox x:Name="WeldCheckbox" Content="Weld"/>
-                    <CheckBox x:Name="ASsemblyCheckbox" Content="Assembly" />
-                    <CheckBox x:Name="PlasmaCheckbox" Content="Plasma" />
-                    <CheckBox x:Name="LaserCheckbox" Content="Laser"/>
-                    <CheckBox x:Name="PurchaseCheckbox" Content="Purchase"/>
+                    <CheckBox Checked="Checkbox_Checked" x:Name="WeldCheckbox" Content="Weld"/>
+                    <CheckBox Checked="Checkbox_Checked" x:Name="PlasmaCheckbox" Content="Plasma" />
+                    <CheckBox Checked="Checkbox_Checked" x:Name="LaserCheckbox" Content="Laser"/>
+                    <CheckBox Checked="Checkbox_Checked" x:Name="PurchaseCheckbox" Content="Purchase"/>
+                    <CheckBox Checked="Checkbox_Checked" x:Name="ASsemblyCheckbox" Content="Assembly" />
                 </StackPanel>
 
                 <StackPanel Grid.Column="2" Margin="0 0 10 0">
-                    <CheckBox x:Name="LatheCheckbox" Content="Lathe"/>
-                    <CheckBox x:Name="DrillCheckbox" Content="Drill" />
-                    <CheckBox x:Name="FoldCheckbox" Content="Fold" />
-                    <CheckBox x:Name="RollCheckbox" Content="Roll"/>
-                    <CheckBox x:Name="SawCheckbox" Content="Saw"/>
+                    <CheckBox Checked="Checkbox_Checked" x:Name="LatheCheckbox" Content="Lathe"/>
+                    <CheckBox Checked="Checkbox_Checked" x:Name="DrillCheckbox" Content="Drill" />
+                    <CheckBox Checked="Checkbox_Checked" x:Name="FoldCheckbox" Content="Fold" />
+                    <CheckBox Checked="Checkbox_Checked" x:Name="RollCheckbox" Content="Roll"/>
+                    <CheckBox Checked="Checkbox_Checked" x:Name="SawCheckbox" Content="Saw"/>
                 </StackPanel>
             </Grid>
 
             <!-- Length -->
             <TextBlock Text="Length"/>
-            <TextBox Padding="2" />
+            <TextBox x:Name="LengthText" Padding="2" />
             
             <!-- Mass -->
             <TextBlock Text="Mass"/>
