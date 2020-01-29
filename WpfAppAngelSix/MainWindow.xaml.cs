@@ -24,5 +24,10 @@ namespace WpfAppAngelSix
         {
             InitializeComponent();
         }
+
+        private void ApplyButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show($"The description is: <{this.DescriptionText.Text}>");
+        }
     }
 }
