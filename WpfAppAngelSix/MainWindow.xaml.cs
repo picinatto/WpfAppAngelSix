@@ -27,7 +27,13 @@ namespace WpfAppAngelSix
 
         private void ApplyButton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show($"The description is: <{this.DescriptionText.Text}>");
+            MessageBox.Show($"The description is: {this.DescriptionText.Text}");
+        }
+
+        private void ResetButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.WeldCheckbox.IsChecked = this.ASsemblyCheckbox.IsChecked = this.PlasmaCheckbox.IsChecked = this.LaserCheckbox.IsChecked = this.PurchaseCheckbox.IsChecked
+                = this.LatheCheckbox.IsChecked = this.DrillCheckbox.IsChecked = this.FoldCheckbox.IsChecked = this.RollCheckbox.IsChecked = this.SawCheckbox.IsChecked = false;
         }
     }
 }

@@ -17,7 +17,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Button x:Name="ApplyButton" Click="ApplyButton_Click"  Margin="0 0 10 0" Content="Apply" Grid.Column="0"/>
-                <Button Content="Reset" Grid.Column="1"/>
+                <Button x:Name="ResetButton" Click="ResetButton_Click" Content="Reset" Grid.Column="1"/>
                 <Button Margin="10 0 0 0" Content="Refresh" Grid.Column="2"/>
             </Grid>
 
@@ -71,19 +71,19 @@
                 
                 <!-- Column 1 -->
                 <StackPanel Grid.Column="0" Margin="0 0 10 0">
-                    <CheckBox Content="Weld"/>
-                    <CheckBox Content="Assembly" />
-                    <CheckBox Content="Plasma" />
-                    <CheckBox Content="Laser"/>
-                    <CheckBox Content="Purchase"/>
+                    <CheckBox x:Name="WeldCheckbox" Content="Weld"/>
+                    <CheckBox x:Name="ASsemblyCheckbox" Content="Assembly" />
+                    <CheckBox x:Name="PlasmaCheckbox" Content="Plasma" />
+                    <CheckBox x:Name="LaserCheckbox" Content="Laser"/>
+                    <CheckBox x:Name="PurchaseCheckbox" Content="Purchase"/>
                 </StackPanel>
 
                 <StackPanel Grid.Column="2" Margin="0 0 10 0">
-                    <CheckBox Content="Lathe"/>
-                    <CheckBox Content="Drill" />
-                    <CheckBox Content="Fold" />
-                    <CheckBox Content="Roll"/>
-                    <CheckBox Content="Saw"/>
+                    <CheckBox x:Name="LatheCheckbox" Content="Lathe"/>
+                    <CheckBox x:Name="DrillCheckbox" Content="Drill" />
+                    <CheckBox x:Name="FoldCheckbox" Content="Fold" />
+                    <CheckBox x:Name="RollCheckbox" Content="Roll"/>
+                    <CheckBox x:Name="SawCheckbox" Content="Saw"/>
                 </StackPanel>
             </Grid>
 
