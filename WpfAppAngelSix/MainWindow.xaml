@@ -98,7 +98,7 @@
 
             <!-- Finish -->
             <TextBlock Text="Finish"/>
-            <ComboBox Padding="2" SelectedIndex="0">
+            <ComboBox SelectionChanged="ComboBox_SelectionChanged" Padding="2" SelectedIndex="0">
                 <ComboBoxItem>Painted</ComboBoxItem>
                 <ComboBoxItem>Not Painted</ComboBoxItem>
             </ComboBox>
@@ -122,7 +122,7 @@
 
             <!-- Description -->
             <TextBlock Text="Note"/>
-            <TextBox Padding="2" />
+            <TextBox x:Name="NoteText" Padding="2" />
 
         </StackPanel>
     </Border>

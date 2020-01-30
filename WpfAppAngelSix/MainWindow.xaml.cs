@@ -40,5 +40,14 @@ namespace WpfAppAngelSix
         {
             this.LengthText.Text += (string)((CheckBox)sender).Content;
         }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (this.NoteText == null)
+                return;
+            var combo = (ComboBox)sender;
+            var value = (ComboBoxItem)combo.SelectedValue;
+            this.NoteText.Text = (string)value.Content;
+        }
     }
 }
